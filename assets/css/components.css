@@ -1,0 +1,204 @@
+.hero__contenido {
+    font-family: "Roboto", sans-serif;
+    background-color: #1E88E5;
+    color: white;
+    padding: 20px;
+    clip-path: ellipse(70% 50% at 50% 10%); /* Ajusta los valores para la curva */
+    height: 330px; /* Ajusta la altura según tu diseño */
+}
+
+.hero__logo {
+    max-width: 500px;
+}
+
+.catalogo {
+    max-width: 1920px;
+    display: grid;
+    grid-template-areas: "categorias productos productos";
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: auto;
+}
+
+.categorias {
+    grid-area: categorias;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.productos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.categorias__filtro select {
+    margin-top: .3rem;
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    }
+
+.categorias__boton {
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #010302;
+    color: white;
+}
+
+.categorias__boton:hover {
+    border: none;
+    cursor: pointer;
+    background-color: #1E88E5;
+    color: white;
+}
+
+.producto {
+    display: inline-block;
+    width: 290px;
+    height: 420px;
+    border: 2px solid #ccc;
+    border-radius: 4%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.producto__talla {
+    scale: .7;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 2px;
+}
+
+.producto__imagen {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.producto__talla--active {
+    scale: .7;
+    text-decoration: none;
+    border: 2px solid #1E88E5;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 2px;
+    display: inline-block;
+    background-color: #1E88E5;
+    color: white;
+}
+
+.producto__talla:hover {
+    cursor: pointer;
+    background-color: #1E88E5;
+    color: white;
+}
+
+.producto__precio {
+    font-size: 1.8rem;
+    margin: 10px;
+    color: #1E88E5;
+    font-weight: bold;
+}
+
+.producto__boton {
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    background-color: #010302;
+    color: white;
+}
+
+.producto__boton:hover {
+    border: none;
+    cursor: pointer;
+    background-color: #1E88E5;
+    color: white;
+}
+
+/* Formulario de Contacto */
+.formulario__contacto {
+    margin: auto;
+    background: #1E88E5;
+    padding: 30px;
+    padding: 30px;
+}
+
+.formulario {
+    border-radius: 10px;
+    max-width: 1920px;
+    margin: auto;
+    background: #1E88E5;
+    padding: 30px;
+    padding: 30px;
+}
+
+.formulario__contacto h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.formulario__contacto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.formulario__contacto input, .formulario__contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.formulario__contacto button {
+    background-color: #010302;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario__contacto button:hover {
+    background-color: #FFC107;
+}
+
+@media (max-width: 1200px) {
+    .catalogo {
+        display: grid;
+        grid-template-areas: "categorias"
+        "productos";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .catalogo {
+        display: grid;
+        grid-template-areas: "categorias productos productos";
+        grid-template-columns: 30% 35% 35%;
+        grid-template-rows: auto;
+    }
+}

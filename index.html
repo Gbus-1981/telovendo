@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeloVendo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main class="contenedor">
+        <section class="hero">
+            <div class="hero__contenido">
+                <img class="hero__logo" src="assets/img/Logotipo_TeloVendo.svg" alt="Logotipo Te lo Vendo">
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <section class="categorias">
+                <h2 class="categorias__titulo">Categorías</h2>
+                <div class="categorias__filtro">
+                    <select name="categoria" id="categoria">
+                        <option value="#" disabled selected>Selecciona una categoría</option>
+                        <option value="vestuario">Vestuario</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                </div>
+                <button class="categorias__boton">Filtrar</button>
+            </section>
+
+            <section class="productos">
+                <h2 class="productos__titulo">Productos destacados</h2>
+                <div class="productos_grilla">
+                    <article class="producto">
+                        <h3 class="producto__titulo">Abrigo Mujer</h3>
+                        <ul class="producto__tallas">
+                            <li class="producto__talla--active">S</li>
+                            <li class="producto__talla">M</li>
+                            <li class="producto__talla">L</li>
+                        </ul>
+                        <img class ="producto__imagen" src="assets/img/abrigo_01.jpg" alt="Abrigo Mujer">
+                        <p class="producto__precio">$23.990</p>
+                        <button class="producto__boton">Agregar al carrito</button>
+                        </article>
+                        <article class="producto">
+                            <h3 class="producto__titulo">Abrigo Mujer 2</h3>
+                            <ul class="producto__tallas">
+                                <li class="producto__talla--active">S</li>
+                                <li class="producto__talla">M</li>
+                                <li class="producto__talla">L</li>
+                            </ul>
+                            <img class ="producto__imagen" src="assets/img/abrigo_02.jpg" alt="Abrigo Mujer">
+                            <p class="producto__precio">$17.990</p>
+                            <button class="producto__boton">Agregar al carrito</button>
+                        </article>
+                        <article class="producto">
+                            <h3 class="producto__titulo">Abrigo Mujer 3</h3>
+                            <ul class="producto__tallas">
+                                <li class="producto__talla--active">S</li>
+                                <li class="producto__talla">M</li>
+                                <li class="producto__talla">L</li>
+                            </ul>
+                            <img class ="producto__imagen" src="assets/img/abrigo_03.jpg" alt="Abrigo Mujer">
+                            <p class="producto__precio">$35.990</p>
+                            <button class="producto__boton">Agregar al carrito</button>
+                        </article>
+                        <article class="producto">
+                            <h3 class="producto__titulo">Polera Mujer</h3>
+                            <ul class="producto__tallas">
+                                <li class="producto__talla--active">S</li>
+                                <li class="producto__talla">M</li>
+                                <li class="producto__talla">L</li>
+                            </ul>
+                            <img class ="producto__imagen" src="assets/img/abrigo_04.jpg" alt="Abrigo Mujer">
+                            <p class="producto__precio">$25.990</p>
+                            <button class="producto__boton">Agregar al carrito</button>
+                        </article>
+                        <article class="producto">
+                            <h3 class="producto__titulo">Pantalon Mujer</h3>
+                            <ul class="producto__tallas">
+                                <li class="producto__talla--active">S</li>
+                                <li class="producto__talla">M</li>
+                                <li class="producto__talla">L</li>
+                            </ul>
+                            <img class ="producto__imagen" src="assets/img/abrigo_05.jpg" alt="Abrigo Mujer">
+                            <p class="producto__precio">$33.990</p>
+                            <button class="producto__boton">Agregar al carrito</button>
+                        </article>
+                        <article class="producto">
+                            <h3 class="producto__titulo">Blusa Mujer</h3>
+                            <ul class="producto__tallas">
+                                <li class="producto__talla--active">S</li>
+                                <li class="producto__talla">M</li>
+                                <li class="producto__talla">L</li>
+                            </ul>
+                            <img class ="producto__imagen" src="assets/img/abrigo_06.jpg" alt="Abrigo Mujer">
+                            <p class="producto__precio">$20.990</p>
+                            <button class="producto__boton">Agregar al carrito</button>
+                        </article>
+                    </div>        
+                </section>
+
+        </section>
+        
+        <section class="formulario">
+            <section class="formulario__contacto">
+                <h2>Contáctanos</h2>
+                <form action="#" method="post">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
