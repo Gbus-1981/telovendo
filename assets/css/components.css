@@ -1,17 +1,57 @@
+/* Navegación */
 
-.hero__contenido {
-    font-family: "Roboto", sans-serif;
-    background-color: #1E88E5;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #212121;
     color: white;
+}
+
+.nav__logo {
+    max-width: 200px;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Hero */
+.hero__contenido {
+    font-family: "Lobster";
+    background-color: #1E88E5;
+    color: #FAFAFA;
     padding: 20px;
     clip-path: ellipse(70% 50% at 50% 10%); /* Ajusta los valores para la curva */
     height: 330px; /* Ajusta la altura según tu diseño */
+}
+
+.hero__contenido h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    
+}
+
+.hero__contenido p {
+    font-size: 1.5rem;
 }
 
 .hero__logo {
     max-width: 500px;
 }
 
+/* Catalogo */
 .catalogo {
     max-width: 1920px;
     display: grid;
@@ -35,9 +75,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.productos__titulo {
+    font-style: italic;
+    color: #212121;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .categorias__filtro select {
