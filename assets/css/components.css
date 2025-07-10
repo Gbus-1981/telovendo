@@ -290,7 +290,7 @@
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: #212121;
@@ -298,11 +298,19 @@
 }
 
 .footer__contenido {
-    display: flex;
-    gap: 1rem;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.footer h3 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer__contenido li {
+    display: inline-block;
+    margin: 10px;
 }
 
 .footer__contenido li a {
