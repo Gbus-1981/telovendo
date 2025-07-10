@@ -198,7 +198,7 @@
 
 .formulario {
     border-radius: 10px;
-    max-width: 1920px;
+    max-width: 900px;
     margin: auto;
     background: #1E88E5;
     padding: 30px;
@@ -298,6 +298,8 @@
     font-weight: 600;
     color: #1E88E5;
 }
+
+
 
 .footer {
     font-size: .8rem;

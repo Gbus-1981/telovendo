@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/variables.css">
 </head>
-
 <body>
     <header>
         <nav class="nav">
@@ -30,30 +29,23 @@
     </header>
 
     <main class="contenedor">
-        <section class="Quienes_somos">
-            <div class="Quienes_somos__contenido">
-                <h1>Quienes Somos</h1>
-                <strong>Te lo Vendo</strong> es un emprendimiento creado por un grupo de jóvenes con la motivación de llevar sus productos al mundo digital. Nacimos con la idea de facilitar el acceso a productos únicos, funcionales y asequibles, apostando por una experiencia de compra clara, rápida y segura.
-            </div>
-        
-            <div class="Quienes_somos__imagen-container">
-                <img src="assets/img/empresarios-corporativos.jpg" alt="Fotografía de Empresarios Corporativos">
-            </div>
+        <section class="formulario">
+            <section class="formulario__contacto">
+                <h2>Contáctanos</h2>
+                <form action="#" method="post">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required />
 
-            <h2>Objetivos del Portal</h2>
-                <ul>
-                    <li>💡 Mostrar de forma atractiva y organizada nuestra oferta de productos.</li>
-                    <li>📱 Garantizar una experiencia accesible desde cualquier dispositivo.</li>
-                    <li>🎯 Ser el primer paso hacia un sistema integral de ventas online.</li>
-                    <li>📈 Fortalecer la presencia digital del emprendimiento.</li>
-                </ul>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required />
 
-            <h2>Responsables del Proyecto</h2>
-                <ul>
-                    <li><strong>Diseño y Desarrollo Front-End:</strong> <br> Camila Collado <br> Daniel Paredes <br> Jesús Pérez</li>
-                </ul>
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-        </section>    
+                <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
         
     </main>
     <footer>
