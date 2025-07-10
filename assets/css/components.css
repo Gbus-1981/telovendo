@@ -26,6 +26,17 @@
     color: white;
 }
 
+/* Ícono hamburguesa oculto en desktop */
+.nav__icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Checkbox oculto */
+.nav__checkbox {
+    display: none;
+}
 
 /* Hero */
 .hero__contenido {
@@ -289,6 +300,7 @@
 }
 
 .footer {
+    font-size: .8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,7 +322,7 @@
 
 .footer__contenido li {
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
 }
 
 .footer__contenido li a {
@@ -337,3 +349,37 @@
         grid-template-rows: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .nav__menu {
+        width: 100%;
+        display: none;
+        background-color: #1565C0;
+        border-radius: 8px;
+    }
+
+    .nav__menu ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav__icon {
+        display: block;
+    }
+
+    .nav__checkbox:checked ~ .nav__menu {
+        display: block;
+    }
+    .hero__contenido h1 {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+    .hero__contenido p {
+        font-size: 1rem;
+    }
+    .productos__titulo {
+        font-size: 1.5rem;
+    }
+
+}
+
