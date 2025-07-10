@@ -33,8 +33,8 @@
     background-color: #1E88E5;
     color: #FAFAFA;
     padding: 20px;
-    clip-path: ellipse(70% 50% at 50% 10%); /* Ajusta los valores para la curva */
-    height: 330px; /* Ajusta la altura según tu diseño */
+    clip-path: ellipse(70% 50% at 50% 10%);
+    height: 330px;
 }
 
 .hero__contenido h1 {
@@ -45,10 +45,6 @@
 
 .hero__contenido p {
     font-size: 1.5rem;
-}
-
-.hero__logo {
-    max-width: 500px;
 }
 
 /* Catalogo */
@@ -113,6 +109,7 @@
 }
 
 .producto {
+    background-color: #f9f9f9;
     display: inline-block;
     width: 290px;
     height: 420px;
@@ -231,6 +228,89 @@
     background-color: #FFC107;
 }
 
+/* Quienes Somos */
+
+.Quienes_somos__contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    background-color: #FAFAFA;
+    line-height: 1.6;
+}
+
+.Quienes_somos__imagen-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Quienes_somos__imagen {
+    max-width: 900px;
+    height: auto;
+    border-radius: 12px; /* opcional: bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* opcional: sombra ligera */
+}
+
+.Quienes_somos h1 {
+    font-size: 2rem;
+    color: #1E88E5; /* Color primario */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 0.5rem;
+}
+
+.Quienes_somos h2 {
+    font-size: 1.5rem;
+    color: #424242;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.Quienes_somos p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Quienes_somos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.Quienes_somos ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.Quienes_somos strong {
+    font-weight: 600;
+    color: #1E88E5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #212121;
+    color: white;
+}
+
+.footer__contenido {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__contenido li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries */
 @media (max-width: 1200px) {
     .catalogo {
         display: grid;
