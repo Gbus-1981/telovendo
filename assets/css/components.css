@@ -355,13 +355,12 @@ textarea::placeholder {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    font-family: 'Roboto', sans-serif;
     color: #212121;
     background-color: #FAFAFA;
     line-height: 1.6;
 }
 
-.Quienes_somos__imagen-container {
+.Quienes_somos__imagen-contenedor {
     text-align: center;
     margin-bottom: 2rem;
 }
