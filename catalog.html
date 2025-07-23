@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te lo Vendo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+<body>
+    <header>
+        <nav class="nav">
+            <img class="nav__logo" src="assets/img/Logotipo_TeloVendo.svg" alt="Logotipo Te lo Vendo">
+            <input type="checkbox" id="menu-toggle" class="nav__checkbox" />
+            <label for="menu-toggle" class="nav__icon">&#9776;</label>
+            <ul class="nav__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html">products</a></li>
+                <li><a href="about.html">Quienes Somos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="catalog">
+            <section class="categories">
+                <h2 class="categories__products__title">Categorías</h2>
+                <div class="categores__filter">
+                    <select name="categoria" id="categoria">
+                        <option value="#" disabled selected>Selecciona una categoría</option>
+                        <option value="vestuario">Vestuario</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                </div>
+                <button class="categorias__btn">Filtrar</button>
+            </section>
+
+            <section class="products">
+                <h2 class="products__title">Explora nuestra colección</h2>
+                <div class="products__grid">
+                    <article class="product">
+                        <h3 class="products__title">Abrigo Mujer</h3>
+                        <ul class="product__sizes">
+                            <li class="product__size--active">S</li>
+                            <li class="product__size">M</li>
+                            <li class="product__size">L</li>
+                        </ul>
+                        <img class="product__image" src="assets/img/abrigo_01.jpg" alt="Abrigo Mujer">
+                        <p class="product__price">$23.990</p>
+                        <button class="product__btn">Agregar al carrito</button>
+                    </article>
+                    <article class="product">
+                        <h3 class="products__title">Abrigo Mujer 2</h3>
+                        <ul class="product__sizes">
+                            <li class="product__size--active">S</li>
+                            <li class="product__size">M</li>
+                            <li class="product__size">L</li>
+                        </ul>
+                        <img class="product__image" src="assets/img/abrigo_02.jpg" alt="Abrigo Mujer">
+                        <p class="product__price">$17.990</p>
+                        <button class="product__btn">Agregar al carrito</button>
+                    </article>
+                    <article class="product">
+                        <h3 class="products__title">Abrigo Mujer 3</h3>
+                        <ul class="product__sizes">
+                            <li class="product__size--active">S</li>
+                            <li class="product__size">M</li>
+                            <li class="product__size">L</li>
+                        </ul>
+                        <img class="product__image" src="assets/img/abrigo_03.jpg" alt="Abrigo Mujer">
+                        <p class="product__price">$35.990</p>
+                        <button class="product__btn">Agregar al carrito</button>
+                    </article>
+                    <article class="product">
+                        <h3 class="products__title">Polera Mujer</h3>
+                        <ul class="product__sizes">
+                            <li class="product__size--active">S</li>
+                            <li class="product__size">M</li>
+                            <li class="product__size">L</li>
+                        </ul>
+                        <img class="product__image" src="assets/img/abrigo_04.jpg" alt="Abrigo Mujer">
+                        <p class="product__price">$25.990</p>
+                        <button class="product__btn">Agregar al carrito</button>
+                    </article>
+                    <article class="product">
+                        <h3 class="products__title">Pantalon Mujer</h3>
+                        <ul class="product__sizes">
+                            <li class="product__size--active">S</li>
+                            <li class="product__size">M</li>
+                            <li class="product__size">L</li>
+                        </ul>
+                        <img class="product__image" src="assets/img/abrigo_05.jpg" alt="Abrigo Mujer">
+                        <p class="product__price">$33.990</p>
+                        <button class="product__btn">Agregar al carrito</button>
+                    </article>
+                    <article class="product">
+                        <h3 class="products__title">Blusa Mujer</h3>
+                        <ul class="product__sizes">
+                            <li class="product__size--active">S</li>
+                            <li class="product__size">M</li>
+                            <li class="product__size">L</li>
+                        </ul>
+                        <img class="product__image" src="assets/img/abrigo_06.jpg" alt="Abrigo Mujer">
+                        <p class="product__price">$20.990</p>
+                        <button class="product__btn">Agregar al carrito</button>
+                    </article>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <h3>Desarrolladores:</h3>
+            <div class="footer__content">
+                <ul>
+                    <li><a href="#">Camila Collado</a></li>
+                    <li><a href="#">Daniel Paredes</a></li>
+                    <li><a href="#">Jesús Pérez</a></li>
+                </ul>
+
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>
