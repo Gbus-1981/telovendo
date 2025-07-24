@@ -1,0 +1,30 @@
+
+.slogan__superposition {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(8, 8, 82, 0.632);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan:hover .sslogan__superposition {
+    opacity: 1;
+}
+
+.slogan__text {
+    font-family: Courier, Monaco, monospace;
+    font-weight: bold;
+    color: rgb(241, 239, 239);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

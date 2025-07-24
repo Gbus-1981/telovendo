@@ -1,0 +1,24 @@
+{
+  "name": "telovendo",
+  "version": "1.0.0",
+  "description": "Bienvenido al repositorio del proyecto **\"Te lo Vendo\"**, una plataforma web estática diseñada como punto de entrada para un futuro sistema de venta de productos en línea. Este sitio cumple con los principios de accesibilidad, buenas prácticas de desarrollo Front-End y organización modular de estilos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gbus-1981/telovendo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gbus-1981/telovendo/issues"
+  },
+  "homepage": "https://github.com/Gbus-1981/telovendo#readme",
+  "dependencies": {
+    "bootstrap": "5.3",
+    "sass": "^1.89.2"
+  }
+}
