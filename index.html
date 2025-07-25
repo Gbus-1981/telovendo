@@ -11,81 +11,92 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/products.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/variables.css">
     
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="nav">
             <img class="nav__logo" src="assets/img/Logotipo_TeloVendo.svg" alt="Logotipo Te lo Vendo">
             <input type="checkbox" id="menu-toggle" class="nav__checkbox" />
             <label for="menu-toggle" class="nav__icon">&#9776;</label>
             <ul class="nav__menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#form">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="products">
-            <h2 class="products__title">No te pierdas estas ofertas increíbles<img src="assets/img/oferta 128px.png"
-                    style="width:100px; vertical-align: middle; margin-left: 20px;"></h2>
-
-            <div class="products__grid">
-                <article class="product">
-                    <h3 class="product__title">Blazer de doble botonadura</h3>
-                    <img class="product__image" src="assets/img/abrigo_01.jpg" alt="Abrigo Mujer">
-                    <p>Blazer de doble botonadura con solapas estándar y botones delante. Modelo con hombreras,
-                        pinzas en la cintura y bolsillos delanteros ribeteados. Forrado.</p>
-                </article>
-
-                <article class="product">
-                    <h3 class="product__title">Abrigo de sarga largo</h3>
-                    <img class="product__image" src="assets/img/abrigo_02.jpg" alt="Abrigo Mujer">
-                    <p>Abrigo de sarga con cuello y botones ocultos delante. Modelo de calce holgado con mangas
-                            raglán y trabilla ajustable con botones en los puños. Bolsillos laterales de ojal y pliegue
-                            de caja invertido en la espalda. Forrado. Largo hasta la rodilla.</p>
-                </article>
-                
-                <article class="product">
-                    <h3 class="product__title">Chaqueta corta</h3>
-                    <img class="product__image" src="assets/img/abrigo_03.jpg" alt="Abrigo Mujer">
-                    <p>Chaqueta corta con cuello redondo y botones delante. Forrada con polar por dentro.</p>
-                </article>
-
-                <article class="product">
-                    <h3 class="product__title">Trenchcoat de doble botonadura</h3>
-                    <img class="product__image" src="assets/img/abrigo_04.jpg" alt="Abrigo Mujer">
-                    <p>Abrigo trench de doble botonadura. Modelo de calce holgado con cuello, solapas anchas y
-                            botonadura frontal. Mangas de corte raglán, bolsillos delanteros ribeteados con solapa y
-                            cinturón de anudar removible. Forrado.</p>
-                </article>
-
-                <article class="product">
-                    <h3 class="product__title">Blazer oversize largo</h3>
-                    <img class="product__image" src="assets/img/abrigo_05.jpg" alt="Abrigo Mujer">
-                    <p>Blazer oversize en sarga de mezcla de algodón con cinturón de anudar removible. Modelo de
-                            hombros caídos con cuello clásico, botones ocultos delante y maxibolsillos delanteros con
-                            solapa. Trabilla abotonada en los puños. Forrada.</p>
-                </article>
-
-                <article class="product">
-                    <h3 class="product__title">Chaqueta oversize de lona</h3>
-                    <img class="product__image" src="assets/img/abrigo_06.jpg" alt="Abrigo Mujer">
-                    <p>Chaqueta oversize en lona de algodón con cuello de cotelé y solapa cortavientos con cierre y
-                            botones delante. Modelo con hombros caídos, puños ajustables con trabilla y botón, y
-                            bolsillos delanteros con solapa y botón. Forrada.</p>
-                </article>
-
-            </div>
+        <h1 class="main__title">Nuestros Productos</h1>
+        <section class="products__grid">
+            <article class="product">
+                <h3 class="product__title">Abrigo Andes</h3>
+                <img class="product__image" src="assets/img/abrigo_01.jpg" alt="">
+                <p class="product__desc">Inspirado en la cordillera: resistente al viento y forro de sherpa.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Abrigo Patagonia</h3>
+                <img class="product__image" src="assets/img/abrigo_02.jpg" alt="">
+                <p class="product__desc">Abrigo de plumas con capucha y bolsillos laterales.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Abrigo Tierra</h3>
+                <img class="product__image" src="assets/img/abrigo_03.jpg" alt="">
+                <p class="product__desc">Abrigo de lana con forro de polar y detalles en cuero.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Abrigo Nieve</h3>
+                <img class="product__image" src="assets/img/abrigo_04.jpg" alt="">
+                <p class="product__desc">Abrigo impermeable con aislamiento térmico.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Chaqueta Épsilon</h3>
+                <img class="product__image" src="assets/img/abrigo_05.jpg" alt="">
+                <p class="product__desc">Chaqueta ligera con capucha y detalles reflectantes.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Chaqueta Nova</h3>
+                <img class="product__image" src="assets/img/abrigo_06.jpg" alt="">
+                <p class="product__desc">Chaqueta de estilo urbano con detalles en contraste.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Chaqueta Lumen</h3>
+                <img class="product__image" src="assets/img/ropa_7.jpg" alt="">
+                <p class="product__desc">Chaqueta de estilo moderno con detalles en neón.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Jersey</h3>
+                <img class="product__image" src="assets/img/jersey_08.jpg" alt="">
+                <p class="product__desc">Jersey de manga larga de tejido de punto con cuello redondo.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Polerón de felpa</h3>
+                <img class="product__image" src="assets/img/poleron_09.jpg" alt="">
+                <p class="product__desc">Polerón de felpa suave con capucha y bolsillo frontal.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Pantalones de tela</h3>
+                <img class="product__image" src="assets/img/pantalones_10.jpg" alt="">
+                <p class="product__desc">Pantalones de tela ligera con estampado floral.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Polera de algodón</h3>
+                <img class="product__image" src="assets/img/polera_11.jpg" alt="">
+                <p class="product__desc">Polera de manga corta y cuello redondo con fit relajado. Perfecta para uso diario.</p>
+            </article>
+            <article class="product">
+                <h3 class="product__title">Chaqueta Puffer Max</h3>
+                <img class="product__image" src="assets/img/chaqueta_12.jpg" alt="">
+                <p class="product__desc">Chaqueta acolchada de gran abrigo con capucha ajustable.</p>
+            </article>
         </section>
-        <section class="form">
+
+        <section class="form" id="form">
             <section class="form__contact">
-                <h2>Déjanos tu comentario</h2>
+                <h2>Queremos saber qué piensas</h2>
                 <form action="#" method="post">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required placeholder="Nombre completo" />
@@ -94,7 +105,7 @@
                     <input type="text" id="last_name" name="last_name" required placeholder="Ingresa tu apellido" />
 
                     <label for="message">Comentario</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Coméntanos cualquier cosa que podamos mejorar para que tu experiencia sea aún mejor."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Déjanos tus comentarios sobre nuestros productos y servicios"></textarea>
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -104,14 +115,18 @@
     </main>
     <footer>
         <section class="footer">
-            <h3>Desarrolladores:</h3>
-            <div class="footer__contenido">
-                <ul>
+            <div class="footer__info">
+                <h3>Desarrolladores:</h3>
+                <ul class="footer__contenido">
                     <li><a href="#">Camila Collado</a></li>
                     <li><a href="#">Daniel Paredes</a></li>
                     <li><a href="#">Jesús Pérez</a></li>
                 </ul>
-
+            </div>
+            <div class="footer__rrss">
+                <a href="#"><img src="assets/img/facebook.svg" alt="Facebook" class="footer__icon"></a>
+                <a href="#"><img src="assets/img/instagram.svg" alt="Instagram" class="footer__icon"></a>
+                <a href="#"><img src="assets/img/whatsapp.svg" alt="WhatsApp" class="footer__icon"></a>
             </div>
 
         </section>

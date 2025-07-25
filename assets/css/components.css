@@ -1,9 +1,17 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #212121;
+    background-color: #1E88E5;
     color: white;
 }
 
@@ -36,44 +44,6 @@
     display: none;
 }
 
-.products {
-    grid-area: products;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-}
-
-.products__title {
-    font-style: italic;
-    color: #212121;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.product {
-    display: flex;
-    background-color: #f9f9f9;
-    display: inline-block;
-    width: 290px;
-    border: 2px solid #1565C0;
-    border-radius: 4%;
-    padding: 5px;
-    margin: 5px;
-}
-
-.product__title {
-    margin-top: 10px;
-}
-
-.product__image {
-    width: 70%;
-    margin: 0;
-    padding: 0;
-}
-
 /* Formulario de Contacto */
 
 .form {
@@ -98,6 +68,7 @@
 
 .form__contact input,
 .form__contact textarea {
+    font-family: "Roboto", sans-serif;
     width: 100%;
     resize: none;
     padding: 10px;
@@ -129,22 +100,28 @@ textarea::placeholder {
     color: #757575;  
 }
 
-
-
 .footer {
     font-size: .8rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: #212121;
     color: white;
 }
 
+.footer__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .footer__contenido {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 10px;
 }
 
 .footer h3 {
@@ -153,13 +130,27 @@ textarea::placeholder {
 }
 
 .footer__contenido li {
-    display: inline-block;
-    margin: 5px;
+    margin: 0;
 }
 
 .footer__contenido li a {
     text-decoration: none;
     color: white;
+}
+
+.footer__rrss {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* Opcional: pone los íconos blancos si son PNG negros */
+    transition: filter 0.2s;
+}
+.footer__icon:hover {
+    filter: brightness(0.8) invert(0.7) sepia(1) hue-rotate(180deg);
 }
 
 
@@ -184,8 +175,25 @@ textarea::placeholder {
         display: block;
     }
 
-    .products__title {
+    .main__title {
         font-size: 1.5rem;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .form__contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .form__contact label {
+        font-size: .8rem;
+    }
+
+    .footer {
+        font-size: .6rem;
+        flex-direction: column;
     }
 
 }
