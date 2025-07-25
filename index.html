@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeloVendo B</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
 </head>
 
 <body>
@@ -41,10 +44,42 @@
         <section class="hero">
             <h1 class="hero__title">¡Bienvenidos a Te lo Vendo!</h1>
             <h2 class="hero__subtitle">Descubre productos únicos y hechos con pasión.</h2>
-            <img src="assets/img/slogan.jpg" alt="Img Hero" class="container-fluid">
+            <div id="herocarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="assets/img/slogan.jpg" class="d-block w-100" alt="carousel 1">
+                        <div class="overlay">
+                            <div class="overlay-text">"Una tienda, miles de posibilidades."</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/img/carousel 2.jpg" class="d-block w-100" alt="carousel 2">
+                        <div class="overlay">
+                            <div class="overlay-text">"Tu estilo, tu tienda, tu elección."</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel 3.jpg" class="d-block w-100" alt="carousel 3">
+                        <div class="overlay">
+                            <div class="overlay-text">"Tenemos lo que necesitas y más."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#herocarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#herocarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
         </section>
+        <h1>No te pierdas estas ofertas increíbles <img src="assets/img/oferta 128px.png" alt="Icono ofeta"></h1>
         <section class="offers">
-            <h1>No te pierdas estas ofertas increíbles <img src="assets/img/oferta 128px.png" alt="Icono ofeta"></h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -57,8 +92,8 @@
                         </div>
                         <div class="card-footer">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">$23.990</li>
-                                <li class="list-group-item">$33.990</li>
+                                <li class="list-group-item--old">$33.990</li>
+                                <li class="list-group-item--price">$23.990</li>
                             </ul>
                             <a href="#" class="btn btn-dark">Añadir a carrito</a>
                         </div>
@@ -76,8 +111,8 @@
                         </div>
                         <div class="card-footer">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">$17.990</li>
-                                <li class="list-group-item">$27.990</li>
+                                <li class="list-group-item--old">$27.990</li>
+                                <li class="list-group-item--price">$17.990</li>
                             </ul>
                             <a href="#" class="btn btn-dark">Añadir a carrito</a>
                         </div>
@@ -93,8 +128,8 @@
                         </div>
                         <div class="card-footer">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">$35.990</li>
-                                <li class="list-group-item">$45.990</li>
+                                <li class="list-group-item--old">$45.990</li>
+                                <li class="list-group-item--price">$35.990</li>
                             </ul>
                             <a href="#" class="btn btn-dark">Añadir a carrito</a>
                         </div>

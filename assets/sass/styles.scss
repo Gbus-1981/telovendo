@@ -1,5 +1,4 @@
-@use 'abstracts/mediaquerys';
-@use 'abstracts/mixins';
+
 @use 'abstracts/variables';
 
 @use '../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -7,11 +6,8 @@
 @use 'base/base';
 @use 'base/reset';
 @use 'base/typography';
-@use 'components/form';
 @use 'components/hero';
-@use 'components/nav';
-@use 'components/products';
+@use 'components/offers';
+@use 'layout/header';
 @use 'layout/footer';
-@use 'layout/grid';
 @use 'layout/layout';
-@use 'pages/home';
