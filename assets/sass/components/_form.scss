@@ -3,4 +3,15 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+    &-label {
+        font-weight: bold;
+    }
+    &-control {
+        border: 2px solid #515253;  
+
+    }
+}
+.form-control:focus {
+  border-color: orangered;
+  box-shadow: 0 0 0 0.3rem rgba(3, 3, 3, 0.25);
 }

@@ -3,6 +3,31 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+    &__title {
+        font-style: italic;
+    }
+
+}
+
+.card {
+    
+    background-color: whitesmoke;
+    border: 2px solid #515253;
+    padding: 5px;
+    margin: 5px;
+
+    &-title {
+        color: #2d2d2e;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    &-img-top {
+        width: 70%;
+        margin: auto;
+        padding: 0;
+        
+    }
 }
 
 .list-group-item--old {
@@ -15,8 +40,8 @@
 
 .list-group-item--price {
 
-        font-size: 18px;
-        color: rgb(43, 41, 41);
-        margin: 0;
+    font-size: 18px;
+    color: rgb(43, 41, 41);
+    margin: 0;
 
 }

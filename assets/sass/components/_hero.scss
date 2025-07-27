@@ -1,7 +1,29 @@
+.hero {
+
+  &__title {
+    color: rgba(245, 245, 245, 0.945);
+    text-shadow:
+      -1px -1px 0 #6c757d,
+      /* arriba izquierda */
+      1px -1px 0 #6c757d,
+      /* arriba derecha */
+      -1px 1px 0 #6c757d,
+      /* abajo izquierda */
+      1px 1px 0 #6c757d;
+    /* abajo derecha */
+    margin: 15px;
+    letter-spacing: 3px;
+  }
+
+  &__subtitle {
+    margin: 10px;
+  }
+}
+
 #herocarousel {
   max-height: 386px;
   max-width: 686px;
-  margin: auto; 
+  margin: auto;
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -12,7 +34,7 @@
 .carousel-item img {
   height: 100%;
   width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .carousel-item .overlay {

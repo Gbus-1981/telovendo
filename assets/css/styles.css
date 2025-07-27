@@ -11980,7 +11980,7 @@ body {
   line-height: 1.5;
   color: #333;
   text-align: center;
-  background-color: rgb(240, 218, 189);
+  background-color: rgba(248, 175, 80, 0.658);
 }
 
 ul, ol {
@@ -11995,6 +11995,17 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.hero__title {
+  color: rgba(245, 245, 245, 0.945);
+  text-shadow: -1px -1px 0 #6c757d, 1px -1px 0 #6c757d, -1px 1px 0 #6c757d, 1px 1px 0 #6c757d;
+  /* abajo derecha */
+  margin: 15px;
+  letter-spacing: 3px;
+}
+.hero__subtitle {
+  margin: 10px;
 }
 
 #herocarousel {
@@ -12047,6 +12058,26 @@ button {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.offers__title {
+  font-style: italic;
+}
+
+.card {
+  background-color: whitesmoke;
+  border: 2px solid #515253;
+  padding: 5px;
+  margin: 5px;
+}
+.card-title {
+  color: #2d2d2e;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.card-img-top {
+  width: 70%;
+  margin: auto;
+  padding: 0;
+}
 
 .list-group-item--old {
   color: red;
@@ -12065,6 +12096,17 @@ button {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.form-label {
+  font-weight: bold;
+}
+.form-control {
+  border: 2px solid #515253;
+}
+
+.form-control:focus {
+  border-color: orangered;
+  box-shadow: 0 0 0 0.3rem rgba(3, 3, 3, 0.25);
 }
 
 .nav__logo {
@@ -12087,6 +12129,9 @@ button {
 }
 .footer__text {
   margin-bottom: 0;
+  font-size: 1.4rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  /* abajo derecha */
 }
 .footer__content {
   list-style: none;
